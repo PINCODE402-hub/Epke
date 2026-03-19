@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    
+}
+.left-section{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    height: 100%;
+    white-space: nowrap;
+}
+.header-text{
+    margin: 0;
+    text-shadow: 3px 4px 10px rgb(15, 253, 15),-3px -4px 10px rgb(253, 126, 15);
+}
+.middle-section{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+}
+.search-bar{
+    flex: 1;
+    width: 0;
+    min-width: 20px;
+    max-width: 600px;
+    height: 20px;
+    margin: 0px 0px 0px 20px;
+}
+.search-but{
+    margin-left: -2px;
+    height: 26px;
+    margin-right: 20px;
+}
+.search-icon{
+    height: 20px;
+}
+.right-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    height: 100%;
+}
+.settings-but{
+    height: 35px;
+    
+}
+/* MAIN SECTION */
+.welcome-section{
+    text-align: center;
+}
+.about-section{
+}
+.about-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.about-title{
+    text-align: center;
+}
+.collection-title{
+    text-align: center;
+}
+.about-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about-but{
+    background-color: rgb(227, 223, 198);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 80%;
+    min-width: 200px;
+    height: 100px;
+    box-shadow: inset 5px 3px 10px black , 5px 5px 10px black;
+}
+.about-but img{
+    width: 100px;
+    border-radius: 20px;
+}
