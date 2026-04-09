@@ -1,0 +1,209 @@
+/* GENERAL */
+body{
+    width: 100%;
+    user-select: none;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    margin: 0;
+}
+hr{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/* HEADER SECTION */
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid;
+    background-color: rgb(252, 248, 181);
+    
+}
+.header-btn-drop{
+    position: relative;
+
+}
+.header-btn{
+    margin-left: 15px;
+    padding-top: 3px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(184, 182, 182);
+    cursor: pointer;
+    
+}
+.header-btn:hover{
+    transition: scale 0.2s,background-color 0.15s;
+    background-color: rgb(236, 219, 219);
+    scale: 1.2;
+}
+.header-btn:active+.side-content{
+    display: block;
+}
+.header-btn-image{
+    object-position: center;
+}
+.side-content{
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+.side-bar{
+    width: 100px;
+    height: 400px;
+    border: 1px solid black;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(233, 233, 233);
+}
+.middle-section{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap;
+}
+.header-text{
+    margin: 0;
+    text-shadow: 3px 4px 10px rgb(15, 253, 15),-3px -4px 10px rgb(253, 126, 15);
+}
+.header-text:hover{
+    cursor: pointer;
+}
+/* MAIN SECTION */
+.welcome-section{
+    text-align: center;
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius:50px;
+}
+
+.welcome-text{
+    margin-top: 0;
+    padding-top: 50px;
+    animation-name: slideleft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+}
+@keyframes slideleft{
+    20%{transform: translate(300px)};
+    
+}
+.about-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+.about-title,.collection-title{
+    text-align: center;
+    margin: 40px 0 5px 0;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(252, 248, 181);
+}
+.about-text{
+    text-align: center;
+}
+.our-service{
+    color: yellowgreen;
+}
+.list{
+    list-style-type: none;
+    width: 200px;
+}
+.list li{
+    background-color: gray;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.list li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: rgb(209, 208, 208);
+    transition: margin-left 0.5s,margin-right 0.5s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.about-but{
+    background-color: rgb(227, 223, 198);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 0px 5px 0px 5px;
+    align-items: center;
+    border-radius: 10px;
+    height: max-content;
+    cursor: pointer;
+    padding: 0 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.about-but img{
+    margin-left: 5px;
+    width: 100px;
+    border-radius: 10px;
+}
+.info{
+    background-color: rgb(252, 248, 181);
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+}
+.owner-pic{
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+.business-info-container{
+    height: fit-content;
+    display: flow-root;
+    overflow: auto;
+}
+/* FOOTER SECTION */
+footer{
+    text-align: center;
+    background-color: rgb(252, 248, 181);
+}
+@media (max-width: 768px) {
+    h2{
+        font-size: 22px;
+        padding: 5px;
+    }
+    p{
+        font-size: 18px;
+        padding: 5px;
+    }
+    footer{
+        font-size: 18px;
+        padding: 10px;
+    }
+}
